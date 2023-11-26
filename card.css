@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(3, 3, 89, 1) 35%,
+    rgba(19, 6, 117, 1) 66%,
+    rgba(8, 0, 173, 1) 100%
+  );
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-container {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transform-style: preserve-3d;
+  transform: perspective(600px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.inner-card {
+  transform: translateZ(50px);
+  background-color: transparent;
+  border-radius: 5px;
+  width: 60%;
+  height: 60%;
+}
+.inner-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card {
+    width: 140px;
+    height: 140px;
+  }
+
+  .inner-card {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .inner-card {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+p {
+  color: aliceblue;
+}
+hr {
+  width: 300px;
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}

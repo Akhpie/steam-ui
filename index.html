@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="card.css" />
+    <title>UI cards</title>
+  </head>
+  <body>
+    <h1>Embark on a 3D Parallax Odyssey</h1>
+    <p>Hover to Experience the depth and motion of interactive card designs</p>
+    <hr />
+    <section class="card-container">
+      <div
+        class="card"
+        data-tilt
+        data-tilt-perspective="500"
+        data-tilt-scale="1.3"
+        data-tilt-glare
+        data-tilt-max-glare="0.8"
+      >
+        <div class="inner-card">
+          <img src="./assets/no bg mirage.png" alt="" />
+        </div>
+      </div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-perspective="600"
+        data-tilt-scale="1.4"
+        data-tilt-glare
+        data-tilt-max-glare="0.8"
+      >
+        <div class="inner-card">
+          <img src="./assets/valo png.avif" alt="" srcset="" />
+        </div>
+      </div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-perspective="500"
+        data-tilt-scale="1.3"
+        data-tilt-glare
+        data-tilt-max-glare="0.8"
+      >
+        <div class="inner-card">
+          <img src="./assets/halo-helmet-nobg.png" alt="" />
+        </div>
+      </div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-perspective="500"
+        data-tilt-scale="1.3"
+        data-tilt-glare
+        data-tilt-max-glare="0.8"
+      >
+        <div class="inner-card">
+          <img src="./assets/forza-2.jpg" alt="" />
+        </div>
+      </div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-perspective="500"
+        data-tilt-scale="1.3"
+        data-tilt-glare
+        data-tilt-max-glare="0.8"
+      >
+        <div class="inner-card">
+          <img src="./assets/f1-logo.jpg" alt="" />
+        </div>
+      </div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-perspective="500"
+        data-tilt-scale="1.3"
+        data-tilt-glare
+        data-tilt-max-glare="0.8"
+      >
+        <div class="inner-card">
+          <img src="./assets/no-bg-assasins.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a
+        href="https://aksprof.netlify.app/"
+        title="visit my profile"
+        target="_blank"
+        ><p>- - Designed by Ak - -</p></a
+      >
+    </footer>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 400,
+        transition: true,
+      });
+    </script>
+  </body>
+</html>
